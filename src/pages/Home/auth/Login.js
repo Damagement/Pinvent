@@ -17,7 +17,7 @@ const Login = () => {
               <input type="password" placeholder='Password' required="password"></input>
               <button type='submit' className='--btn --btn-primary --btn-block'>Login</button>
              </form>
-             <Link to="/forgot">Forgot Password</Link>
+             <Link to="/forgot">Forgot Password?</Link>
              <span className='register'>
              <Link to="/">Home </Link>
              <p>&nbsp;  Dont Have an Account ? &nbsp; </p>
