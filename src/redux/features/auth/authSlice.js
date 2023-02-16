@@ -1,5 +1,6 @@
 import {createSlice } from '@reduxjs/toolkit'
 
+
 const name= JSON.parse(localStorage.getItem("name"))
 
 const initialState = {
@@ -40,5 +41,9 @@ const authSlice = createSlice({
 });
 
 export const {SET_LOGIN,SET_NAME,SET_USER} = authSlice.actions;
+
+export const selectIsLoggedIn = (state) => state.auth.isLoggedIn;
+export const selectName = (state) => state.auth.name;
+export const selectUser = (state) => state.auth.user;
 
 export default authSlice.reducer;
